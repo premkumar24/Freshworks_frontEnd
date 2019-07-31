@@ -1,0 +1,387 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<title>Country Mapping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="resources/android-icon-96x96.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ body {
+    font-family: "Lato", sans-serif;
+} 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+</style>
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  height : 30%;
+  background-color:white;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.leftdiv{
+float:left;
+padding:16px;
+width : 50%;
+height : 100%;
+}
+.rightdiv
+{
+float:right;
+padding:16px;
+width :50%;
+height : 100%;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+</style>
+  
+<body class="w3-content" style="max-width:2000px" >
+
+
+                      <!-- Sidebar/menu -->
+                      
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+   
+  <div class="w3-container w3-display-container w3-padding-16"STYLE="FONT-WEIGHT:BOLD">
+   
+       <a href="card.html?name=colombia" class="w3-button w3-red w3-padding-large w3-small">Colombia</a>  
+  </div>
+ 
+  
+  
+   <div class="w3-container w3-display-container w3-padding-16"STYLE="FONT-WEIGHT:BOLD">
+ 
+       <a href="card.html?name=India" class="w3-button w3-green w3-padding-large w3-small" >India</a>  
+  </div>
+  
+ 
+   
+
+</div>
+ 
+
+  <!-- Push down content on small screens -->
+  <div class="w3-main" style="margin-left:0px">
+  <div class="w3-hide-large" style="margin-top:0px"></div>
+  
+                                   <!-- Top header -->
+  
+  <header class="w3-container w3-xlarge" >
+   
+    <p class="w3-left"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                           
+   </p>
+       <div class="w3-display-topmiddle"> <h2 id="name"></h2></div>
+    <div class="w3-right" onclick="closeNav()">
+    
+
+    
+ 
+    </div>
+   
+    
+  </header>
+  
+ 
+                                 
+    
+<div class="leftdiv" align="center">
+<img id="bci" width="100%" height="100%">
+</div>
+<div class="rightdiv">
+<p id="capital"></p>
+<p id="population"></p>
+<p id="region"></p>
+<p id="subregion"></p>
+<p id="area"></p>
+<p id="gini"></p>
+<p id="lat"></p>
+<p id="lng"></p>
+<p id="callingCodes"></p>
+<p id="demonym"></p>
+<p id="timezones"></p>
+<p id="borders"></p>
+<p id="numericCode"></p>
+<p id="languages"></p>
+<p id="nativeName"></p>
+<p id="nativeName1"></p>
+<p id="altSpellings"></p>
+<p id="currenciescode"></p>
+<p id="currenciesrupee"></p>
+<p id="currenciessymbol"></p>
+
+</div>
+
+<form>
+<input type="button" value="GO BACK" onClick="history.back()">
+</form>
+<script>
+window.onload= function () {
+var url =document.location.href,d={},tmp,
+params = url.split('?')[1].split('&');
+for(var i=0,l=params.length;i<l;i++)
+{
+tmp=params[i].split('=');
+d[tmp[0]]=tmp[1];
+}
+
+
+var url = "https://restcountries.eu/rest/v2/name/"+d.name+"?fullText=true";
+ fetch(url)
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    // Work with JSON data her
+	document.getElementById("bci").src=data[0].flag;
+     document.getElementById("name").innerHTML=data[0].name;
+	 if(data[0].capital!="")
+	  document.getElementById("capital").innerHTML="<b>Capital</b>:   "+data[0].capital;
+	  document.getElementById("population").innerHTML="<b>Population</b>:  "+data[0].population;
+   document.getElementById("region").innerHTML="<b>Region</b>:   "+data[0].region;
+   document.getElementById("subregion").innerHTML="<b>SubRegion</b>:  "+data[0].subregion;
+   if(data[0].area!=null)
+   document.getElementById("area").innerHTML="<b>Area</b>:  "+data[0].area;
+  if(data[0].gini!=null)
+   document.getElementById("gini").innerHTML="<b>Gini</b>:  "+data[0].gini;
+   if(data[0].latlng[0]!=null)
+   document.getElementById("lat").innerHTML="<b>Latitude</b>:  "+data[0].latlng[0];
+  if(data[0].latlng[1]!=null)
+   document.getElementById("lng").innerHTML="<b>Longitude</b>:  "+data[0].latlng[1];
+  if(data[0].callingCodes!=null)
+   document.getElementById("callingCodes").innerHTML="<b>CallingCodes</b>:  "+data[0].callingCodes;
+if(data[0].demonym!=null)
+   document.getElementById("demonym").innerHTML="<b>Demonym</b>:  "+data[0].demonym;
+if(data[0].timezones!=null)
+   document.getElementById("timezones").innerHTML="<b>Timezones</b>:  "+data[0].timezones;
+var x="";
+for(var i in data[0].borders)
+{
+x+=data[0].borders[i]+", ";
+}
+document.getElementById("borders").innerHTML="<b>Borders</b>:  "+x;
+
+if(data[0].numericCode!=null)
+   document.getElementById("numericCode").innerHTML="<b>NumericCode</b>:  "+data[0].numericCode;
+if(data[0].languages[0].name!=null)
+   document.getElementById("languages").innerHTML="<b>Languages</b>:  "+data[0].languages[0].name;
+if(data[0].languages[0].nativeName!=null)
+   document.getElementById("nativeName").innerHTML="<b>Language Native Name</b>:  "+data[0].languages[0].nativeName;
+  if(data[0].nativeName!=null)
+   document.getElementById("nativeName1").innerHTML="<b>Native Name</b>:  "+data[0].nativeName;
+var y="";
+for(var i in data[0].altSpellings)
+{
+y+=data[0].altSpellings[i]+", ";
+}
+document.getElementById("altSpellings").innerHTML="<b>AltSpellings</b>:  "+y;
+if(data[0].currencies.code!=null)
+   document.getElementById("currenciescode").innerHTML="<b>currency code</b>:  "+data[0].currencies.code;
+}
+  )
+  .catch(err => {
+	
+    document.getElementById("n").innerHTML=x;
+  })
+  }
+</script>                   
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+                 // Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".dropdown-menu li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+              
+</body>
+</html>
+  
